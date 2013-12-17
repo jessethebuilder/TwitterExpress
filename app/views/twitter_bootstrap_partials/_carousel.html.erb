@@ -1,0 +1,37 @@
+<div id="express_carousel" class="carousel slide" data-ride="carousel">
+  <% if use_indicators %>
+    <ol class="carousel-indicators">
+      <% images.each_with_index do |img, i| %>
+        <li data-target="express_carousel" data-slide-to="<%= i %>"></li>
+      <% end %>
+    </ol>
+  <% end %>
+
+  <div class="carousel-inner">
+    <% images.each_with_index do |img, i| %>
+      <div class="item">
+        <%= image_tag img %>
+        <div class="carousel-caption">
+          <h2>
+            <%= file_name_in(img).titleize %>
+          </h2>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <a class="left carousel-control" href="#express_carousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#express_carousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+
+  <script>
+      $('div.item:first').addClass('active');
+      $('li[data-slide-to="0"]').addClass('active');
+      $('#express_carousel').carousel();
+  </script>
+</div>
+
+<!-- todo set first img/incidabor as acgive -->
