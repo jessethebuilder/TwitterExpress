@@ -1,6 +1,7 @@
 Dummy::Application.routes.draw do
 
   get 'test/carousel', :to => 'test#carousel'
+  get 'test/modal', :to => 'test#modal'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

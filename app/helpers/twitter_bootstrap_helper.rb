@@ -9,6 +9,16 @@ module  TwitterBootstrapHelper
            :locals => {:images => images, :use_indicators => use_indicators}
   end
 
+  def express_modal(title, footer_content = nil, destroy_on_close = false, &content)
+    render :partial => 'twitter_bootstrap_partials/modal',
+           :locals => {:title => title, :footer_content => footer_content, :content => capture(&content),
+                       :destroy_on_close => destroy_on_close}
+  end
+
+  def modal_close_button
+    '<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>'.html_safe
+  end
+
   private
 
   def all_images_in(path)

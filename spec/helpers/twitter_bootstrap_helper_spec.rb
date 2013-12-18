@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe TwitterBootstrapHelper do
-  let(:img_path){ 'C:/Users/jf/Desktop/jesseweb/TwitterExpress/spec/img/' }
+  let(:img_path){ 'C:/Users/jf/Desktop/jesseweb/TwitterExpress/spec/dummy/app/assets/images/test/' }
   describe 'carousel' do
 
     describe 'private functions' do
