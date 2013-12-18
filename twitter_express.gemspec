@@ -7,11 +7,11 @@ require "twitter_express/version"
 Gem::Specification.new do |s|
   s.name        = "twitter_express"
   s.version     = TwitterExpress::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of TwitterExpress."
-  s.description = "TODO: Description of TwitterExpress."
+  s.authors     = ["Jesse Farmer"]
+  s.email       = ["jessethebuilder@yahoo.com"]
+  s.homepage    = ""
+  s.summary     = "Twitter Bootstrap helpers for Ruby on Rails"
+  s.description = "Turnkey, one-function Twitter Bootstrap helpers for use in Rails"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
 
