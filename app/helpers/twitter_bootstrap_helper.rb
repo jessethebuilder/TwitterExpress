@@ -2,11 +2,10 @@ module  TwitterBootstrapHelper
 
   IMAGE_TYPES = %w|png jpg jpeg gif|
 
-  def express_carousel(path, use_indicators = true)
-  #puts all of the images in path into a carousel. Sets the file name (titleized) as caption in <h2> tags.
-    images = all_images_in path
-    render :partial => 'twitter_bootstrap_partials/carousel',
-           :locals => {:images => images, :use_indicators => use_indicators}
+  def express_carousel(object)
+    #expects object to have an #images association, in which each image responds to image_url, like carrier_wave.
+    #Each image object should also respond to #description
+    render :partial => 'twitter_bootstrap_partials/carousel', :locals => {:o => object}
   end
 
   def express_modal(title, footer_content = nil, destroy_on_close = false, &content)

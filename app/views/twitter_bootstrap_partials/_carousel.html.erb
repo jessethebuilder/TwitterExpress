@@ -1,37 +1,31 @@
-<div id="express_carousel" class="carousel slide" data-ride="carousel">
-  <% if use_indicators %>
+<% carousel_id = "#{o.class.name.downcase}_carousel" %>
+<%= content_tag :div, :id => carousel_id, :class => 'carousel slide', 'data-ride' => 'carousel' do %>
     <ol class="carousel-indicators">
-      <% images.each_with_index do |img, i| %>
-        <li data-target="express_carousel" data-slide-to="<%= i %>"></li>
+      <% o.images.each_with_index do |img, n| %>
+          <%= content_tag :li, '', 'data-target' => "##{carousel_id}", 'data-slide-to' => n,
+                          :class => n == 0 ? 'active' : nil %>
       <% end %>
     </ol>
-  <% end %>
 
-  <div class="carousel-inner">
-    <% images.each_with_index do |img, i| %>
-      <div class="item">
-        <%= image_tag img %>
-        <div class="carousel-caption">
-          <h2>
-            <%= file_name_in(img).titleize %>
-          </h2>
-        </div>
-      </div>
+    <div class="carousel-inner">
+      <% o.images.each_with_index do |img, n| %>
+          <%= content_tag :div, :class => n == 0 ? 'item active' : 'item' do %>
+              <div class="inner_carousel_item">
+                <%= image_tag img.image_url(:carousel) %>
+              </div>
+              <div class='carousel-caption'>
+                <h3>
+                  <%= img.description.to_s %>
+                </h3>
+              </div>
+          <% end %>
+      <% end %>
+    </div>
+
+    <%= content_tag :a, '', :href => "##{carousel_id}", :class => 'left carousel-control', 'data-slide' => 'prev' do %>
+        <span class="glyphicon glyphicon-chevron-left"></span>
     <% end %>
-  </div>
-
-  <a class="left carousel-control" href="#express_carousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#express_carousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-
-  <script>
-      $('div.item:first').addClass('active');
-      $('li[data-slide-to="0"]').addClass('active');
-      $('#express_carousel').carousel();
-  </script>
-</div>
-
-<!-- todo set first img/incidabor as acgive -->
+    <%= content_tag :a, '', :href => "##{carousel_id}", :class => 'right carousel-control', 'data-slide' => 'next' do %>
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    <% end %>
+<% end %>
