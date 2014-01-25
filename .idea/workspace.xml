@@ -45,7 +45,7 @@
       <file leaf-file-name="twitter_bootstrap_helper.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/helpers/twitter_bootstrap_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="19" selection-start="470" selection-end="470" vertical-scroll-proportion="0.2611732" vertical-offset="0" max-vertical-offset="799">
+            <state line="9" column="67" selection-start="438" selection-end="438" vertical-scroll-proportion="0.21368715" vertical-offset="0" max-vertical-offset="799">
               <folding />
             </state>
           </provider>
@@ -642,7 +642,11 @@
       <created>1390645790897</created>
       <updated>1390645790897</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Carousel can recieve an array of objects or just a single object, so long as they have an images.&#10;">
+      <created>1390646041204</created>
+      <updated>1390646041204</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -987,7 +991,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/twitter_bootstrap_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="19" selection-start="470" selection-end="470" vertical-scroll-proportion="0.2611732" vertical-offset="0" max-vertical-offset="799">
+        <state line="9" column="67" selection-start="438" selection-end="438" vertical-scroll-proportion="0.21368715" vertical-offset="0" max-vertical-offset="799">
           <folding />
         </state>
       </provider>

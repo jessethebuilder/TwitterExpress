@@ -6,7 +6,7 @@ module  TwitterBootstrapHelper
     #expects object to have an #images association, in which each image responds to image_url, like carrier_wave.
     #Each image object should also respond to #description
     images = []
-    objects = [objects] unless objects.class == Array
+    objects = [objects] unless objects.is_a?(ActiveRecord::Relation)
     objects.each do |o|
       o.images.each do |i|
         images << i
