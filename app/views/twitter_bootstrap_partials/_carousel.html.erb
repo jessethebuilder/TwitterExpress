@@ -1,14 +1,15 @@
-<% carousel_id = "#{o.class.name.downcase}_carousel" %>
 <%= content_tag :div, :id => carousel_id, :class => 'carousel slide', 'data-ride' => 'carousel' do %>
+  <% if use_indicators %>
     <ol class="carousel-indicators">
-      <% o.images.each_with_index do |img, n| %>
+      <% images.each_with_index do |img, n| %>
           <%= content_tag :li, '', 'data-target' => "##{carousel_id}", 'data-slide-to' => n,
                           :class => n == 0 ? 'active' : nil %>
       <% end %>
     </ol>
+  <% end %>
 
     <div class="carousel-inner">
-      <% o.images.each_with_index do |img, n| %>
+      <% images.each_with_index do |img, n| %>
           <%= content_tag :div, :class => n == 0 ? 'item active' : 'item' do %>
               <div class="inner_carousel_item">
                 <%= image_tag img.image_url(:carousel) %>

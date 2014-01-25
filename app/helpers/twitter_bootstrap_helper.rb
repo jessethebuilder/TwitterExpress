@@ -2,10 +2,16 @@ module  TwitterBootstrapHelper
 
   IMAGE_TYPES = %w|png jpg jpeg gif|
 
-  def express_carousel(object)
+  def express_carousel(objects, use_indicators: true, carousel_id: 'express_carousel')
     #expects object to have an #images association, in which each image responds to image_url, like carrier_wave.
     #Each image object should also respond to #description
-    render :partial => 'twitter_bootstrap_partials/carousel', :locals => {:o => object}
+    images = []
+    objs = [objs] unless objects.class == Array
+    objs.each do |o|
+      images << o.images
+    end
+    render :partial => 'twitter_bootstrap_partials/carousel',
+           :locals => {:images => images, :use_indicators => use_indicators, :carousel_id => carousel_id}
   end
 
   def express_modal(title, footer_content = nil, destroy_on_close = false, &content)
