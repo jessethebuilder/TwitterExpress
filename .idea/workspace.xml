@@ -36,7 +36,7 @@
       <file leaf-file-name="_carousel.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/twitter_bootstrap_partials/_carousel.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="35" selection-start="602" selection-end="602" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="629">
+            <state line="14" column="35" selection-start="650" selection-end="650" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="629">
               <folding />
             </state>
           </provider>
@@ -45,7 +45,7 @@
       <file leaf-file-name="twitter_bootstrap_helper.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/helpers/twitter_bootstrap_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="11" selection-start="411" selection-end="411" vertical-scroll-proportion="0.21368715" vertical-offset="0" max-vertical-offset="765">
+            <state line="11" column="19" selection-start="470" selection-end="470" vertical-scroll-proportion="0.2611732" vertical-offset="0" max-vertical-offset="799">
               <folding />
             </state>
           </provider>
@@ -638,7 +638,11 @@
       <created>1390645283584</created>
       <updated>1390645283584</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Carousel can recieve an array of objects or just a single object, so long as they have an images.&#10;">
+      <created>1390645790897</created>
+      <updated>1390645790897</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -682,7 +686,8 @@
     <MESSAGE value="Initial commit&#10;" />
     <MESSAGE value="Carousel and Modal&#10;" />
     <MESSAGE value="Carousel can recieve an array of objects or just a single object, so long as they have an images." />
-    <option name="LAST_COMMIT_MESSAGE" value="Carousel can recieve an array of objects or just a single object, so long as they have an images." />
+    <MESSAGE value="Carousel can recieve an array of objects or just a single object, so long as they have an images.&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Carousel can recieve an array of objects or just a single object, so long as they have an images.&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -975,14 +980,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/twitter_bootstrap_partials/_carousel.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="35" selection-start="602" selection-end="602" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="629">
+        <state line="14" column="35" selection-start="650" selection-end="650" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="629">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/twitter_bootstrap_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="11" selection-start="411" selection-end="411" vertical-scroll-proportion="0.21368715" vertical-offset="0" max-vertical-offset="765">
+        <state line="11" column="19" selection-start="470" selection-end="470" vertical-scroll-proportion="0.2611732" vertical-offset="0" max-vertical-offset="799">
           <folding />
         </state>
       </provider>

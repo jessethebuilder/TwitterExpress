@@ -8,7 +8,9 @@ module  TwitterBootstrapHelper
     images = []
     objects = [objects] unless objects.class == Array
     objects.each do |o|
-      images << o.images
+      o.images.each do |i|
+        images << i
+      end
     end
     render :partial => 'twitter_bootstrap_partials/carousel',
            :locals => {:images => images, :use_indicators => use_indicators, :carousel_id => carousel_id}
