@@ -6,8 +6,8 @@ module  TwitterBootstrapHelper
     #expects object to have an #images association, in which each image responds to image_url, like carrier_wave.
     #Each image object should also respond to #description
     images = []
-    objs = [objs] unless objects.class == Array
-    objs.each do |o|
+    objects = [objects] unless objects.class == Array
+    objects.each do |o|
       images << o.images
     end
     render :partial => 'twitter_bootstrap_partials/carousel',
