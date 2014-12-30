@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3026ca28-2e1a-44aa-a39e-a790edb5fe96" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/twitter_bootstrap_partials/_top_navbar.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/datepicker_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/TwitterExpress.iml" afterPath="$PROJECT_DIR$/.idea/TwitterExpress.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/twitter_bootstrap_partials/_carousel.html.erb" afterPath="$PROJECT_DIR$/app/views/twitter_bootstrap_partials/_carousel.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/twitter_bootstrap_partials/_modal.html.erb" afterPath="$PROJECT_DIR$/app/views/twitter_bootstrap_partials/_modal.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/twitter_bootstrap_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/twitter_bootstrap_helper.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -15,8 +20,8 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/TwitterExpress@app_spec__TwitterExpress.coverage" NAME="app:spec: TwitterExpress Coverage Results" MODIFIED="1387236196127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TwitterExpress" />
     <SUITE FILE_PATH="coverage/TwitterExpress@app_db_migrate__TwitterExpress.coverage" NAME="app:db:migrate: TwitterExpress Coverage Results" MODIFIED="1387235602221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TwitterExpress" />
+    <SUITE FILE_PATH="coverage/TwitterExpress@app_spec__TwitterExpress.coverage" NAME="app:spec: TwitterExpress Coverage Results" MODIFIED="1387236196127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TwitterExpress" />
     <SUITE FILE_PATH="coverage/TwitterExpress@Development__TwitterExpress.coverage" NAME="Development: TwitterExpress Coverage Results" MODIFIED="1388659266909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TwitterExpress" />
     <SUITE FILE_PATH="coverage/TwitterExpress@spec__TwitterExpress.coverage" NAME="spec: TwitterExpress Coverage Results" MODIFIED="1387325553673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TwitterExpress" />
     <SUITE FILE_PATH="coverage/TwitterExpress@IRB_console__TwitterExpress.coverage" NAME="IRB console: TwitterExpress Coverage Results" MODIFIED="1387272294567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TwitterExpress" />
@@ -36,8 +41,16 @@
       <file leaf-file-name="_carousel.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/twitter_bootstrap_partials/_carousel.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="35" selection-start="650" selection-end="650" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="629">
-              <folding />
+            <state line="23" column="12" selection-start="954" selection-end="954" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="680">
+              <folding>
+                <marker date="1390687506089" expanded="true" signature="170:465" placeholder="if ... end" />
+                <marker date="1390687506089" expanded="true" signature="260:443" placeholder="do ... end" />
+                <marker date="1390687506089" expanded="true" signature="535:996" placeholder="do ... end" />
+                <marker date="1390687506089" expanded="true" signature="624:980" placeholder="do ... end" />
+                <marker date="1390687506089" expanded="true" signature="770:960" placeholder="if ... end" />
+                <marker date="1390687506089" expanded="true" signature="1126:1205" placeholder="do ... end" />
+                <marker date="1390687506089" expanded="true" signature="1324:1404" placeholder="do ... end" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -45,7 +58,25 @@
       <file leaf-file-name="twitter_bootstrap_helper.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/helpers/twitter_bootstrap_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="67" selection-start="438" selection-end="438" vertical-scroll-proportion="0.21368715" vertical-offset="0" max-vertical-offset="799">
+            <state line="20" column="14" selection-start="897" selection-end="897" vertical-scroll-proportion="0.47419804" vertical-offset="0" max-vertical-offset="833">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_modal.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/twitter_bootstrap_partials/_modal.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="23" selection-start="23" selection-end="23" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="544">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="datepicker_helper.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/helpers/datepicker_helper.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="38" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="221">
               <folding />
             </state>
           </provider>
@@ -80,10 +111,12 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/spec/features/modal_request_spec.rb" />
         <option value="$PROJECT_DIR$/twitter_express.gemspec" />
-        <option value="$PROJECT_DIR$/app/views/twitter_bootstrap_partials/_modal.html.erb" />
         <option value="$PROJECT_DIR$/spec/dummy/app/views/test/carousel.html.erb" />
         <option value="$PROJECT_DIR$/app/views/twitter_bootstrap_partials/_carousel.html.erb" />
+        <option value="$PROJECT_DIR$/app/helpers/datepicker_helper.rb" />
+        <option value="$PROJECT_DIR$/app/views/twitter_bootstrap_partials/_modal.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/twitter_bootstrap_helper.rb" />
+        <option value="$PROJECT_DIR$/app/views/twitter_bootstrap_partials/_top_navbar.html.erb" />
       </list>
     </option>
   </component>
@@ -119,6 +152,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -258,7 +292,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -348,6 +381,24 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
+    <configuration default="true" type="CommandRunConfigurationType" factoryName="Gem Command">
+      <module name="" />
+      <COMMAND_RUN_CONFIGURATION NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <COMMAND_RUN_CONFIGURATION NAME="WORK DIR" VALUE="" />
+      <COMMAND_RUN_CONFIGURATION NAME="SHOULD_USE_SDK" VALUE="false" />
+      <COMMAND_RUN_CONFIGURATION NAME="ALTERN_SDK_NAME" VALUE="" />
+      <COMMAND_RUN_CONFIGURATION NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <COMMAND_CONFIG_SETTINGS_ID NAME="GEM_NAME" VALUE="" />
+      <COMMAND_CONFIG_SETTINGS_ID NAME="EXECUTABLE_NAME" VALUE="" />
+      <COMMAND_CONFIG_SETTINGS_ID NAME="EXECUTABLE_ARGS" VALUE="" />
+      <COMMAND_CONFIG_SETTINGS_ID NAME="WORKING_DIR" VALUE="" />
+      <method />
+    </configuration>
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
       <module name="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -366,24 +417,6 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="CommandRunConfigurationType" factoryName="Gem Command">
-      <module name="" />
-      <COMMAND_RUN_CONFIGURATION NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <COMMAND_RUN_CONFIGURATION NAME="WORK DIR" VALUE="" />
-      <COMMAND_RUN_CONFIGURATION NAME="SHOULD_USE_SDK" VALUE="false" />
-      <COMMAND_RUN_CONFIGURATION NAME="ALTERN_SDK_NAME" VALUE="" />
-      <COMMAND_RUN_CONFIGURATION NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <COMMAND_CONFIG_SETTINGS_ID NAME="GEM_NAME" VALUE="" />
-      <COMMAND_CONFIG_SETTINGS_ID NAME="EXECUTABLE_NAME" VALUE="" />
-      <COMMAND_CONFIG_SETTINGS_ID NAME="EXECUTABLE_ARGS" VALUE="" />
-      <COMMAND_CONFIG_SETTINGS_ID NAME="WORKING_DIR" VALUE="" />
       <method />
     </configuration>
     <configuration default="true" type="RailsRunConfigurationType" factoryName="Rails">
@@ -646,21 +679,24 @@
       <created>1390646041204</created>
       <updated>1390646041204</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Carousel can recieve an array of objects or just a single object, so long as they have an images.&#10;">
+      <created>1390681410492</created>
+      <updated>1390681410492</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3301887" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28498074" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30359435" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39892185" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -670,13 +706,14 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USERS">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
     </option>
   </component>
@@ -699,18 +736,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spec/features/modal_request_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="69" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="323" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="2" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="680">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/twitter_express.gemspec">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="83" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="561" />
@@ -730,9 +755,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/twitter_bootstrap_partials/_modal.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="10" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="544">
-          <folding />
-        </state>
+        <state line="15" column="10" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="544" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/features/modal_request_spec.rb">
@@ -766,9 +789,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/twitter_bootstrap_partials/_modal.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="10" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="544">
-          <folding />
-        </state>
+        <state line="15" column="10" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="544" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/features/modal_request_spec.rb">
@@ -802,9 +823,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/twitter_bootstrap_partials/_modal.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="10" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="544">
-          <folding />
-        </state>
+        <state line="15" column="10" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="544" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/features/modal_request_spec.rb">
@@ -838,9 +857,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/twitter_bootstrap_partials/_modal.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="10" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="544">
-          <folding />
-        </state>
+        <state line="15" column="10" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="544" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/features/modal_request_spec.rb">
@@ -956,23 +973,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/dummy/app/views/test/carousel.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="3" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="255">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/twitter_bootstrap_partials/_modal.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="90" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="544">
-          <folding />
-        </state>
+        <state line="7" column="3" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="255" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/twitter_express.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="718">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="718" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/twitter_express/engine.rb">
@@ -982,16 +988,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/datepicker_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="38" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/twitter_bootstrap_partials/_carousel.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="35" selection-start="650" selection-end="650" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="629">
+        <state line="23" column="12" selection-start="954" selection-end="954" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="680">
+          <folding>
+            <marker date="1390687506089" expanded="true" signature="170:465" placeholder="if ... end" />
+            <marker date="1390687506089" expanded="true" signature="260:443" placeholder="do ... end" />
+            <marker date="1390687506089" expanded="true" signature="535:996" placeholder="do ... end" />
+            <marker date="1390687506089" expanded="true" signature="624:980" placeholder="do ... end" />
+            <marker date="1390687506089" expanded="true" signature="770:960" placeholder="if ... end" />
+            <marker date="1390687506089" expanded="true" signature="1126:1205" placeholder="do ... end" />
+            <marker date="1390687506089" expanded="true" signature="1324:1404" placeholder="do ... end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/twitter_bootstrap_partials/_top_navbar.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="82" selection-start="295" selection-end="295" vertical-scroll-proportion="0.07380608" vertical-offset="102" max-vertical-offset="1003">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/twitter_bootstrap_partials/_modal.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="23" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/twitter_bootstrap_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="67" selection-start="438" selection-end="438" vertical-scroll-proportion="0.21368715" vertical-offset="0" max-vertical-offset="799">
+        <state line="20" column="14" selection-start="897" selection-end="897" vertical-scroll-proportion="0.47419804" vertical-offset="0" max-vertical-offset="833">
           <folding />
         </state>
       </provider>

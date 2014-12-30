@@ -1,4 +1,5 @@
-<%= content_tag :div, :id => carousel_id, :class => 'carousel slide', 'data-ride' => 'carousel' do %>
+<%= content_tag :div, :id => carousel_id, :class => 'carousel slide', 'data-ride' => 'carousel',
+                             'data-interval' => data_interval do %>
   <% if use_indicators %>
     <ol class="carousel-indicators">
       <% images.each_with_index do |img, n| %>
@@ -11,14 +12,16 @@
     <div class="carousel-inner">
       <% images.each_with_index do |img, n| %>
           <%= content_tag :div, :class => n == 0 ? 'item active' : 'item' do %>
-              <div class="inner_carousel_item">
-                <%= image_tag img.image_url(:carousel) %>
-              </div>
+            <div class="inner_carousel_item">
+              <%= image_tag img.image_url(image_version) %>
+            </div>
+            <% if use_labels %>
               <div class='carousel-caption'>
                 <h3>
                   <%= img.description.to_s %>
                 </h3>
               </div>
+            <% end %>
           <% end %>
       <% end %>
     </div>
