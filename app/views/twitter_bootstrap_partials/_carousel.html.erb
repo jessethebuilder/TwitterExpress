@@ -1,21 +1,25 @@
-<%= content_tag :div, :id => carousel_id, :class => 'carousel slide', 'data-ride' => 'carousel',
-                             'data-interval' => data_interval do %>
+
+
+<%= content_tag :div, :id => element_id, :class => 'carousel slide', 'data-ride' => 'carousel',
+                             'data-interval' => delay do %>
   <% if use_indicators %>
     <ol class="carousel-indicators">
       <% images.each_with_index do |img, n| %>
-          <%= content_tag :li, '', 'data-target' => "##{carousel_id}", 'data-slide-to' => n,
+          <%= content_tag :li, '', 'data-target' => "##{element_id}", 'data-slide-to' => n,
                           :class => n == 0 ? 'active' : nil %>
-      <% end %>
+      <%  end %>
     </ol>
   <% end %>
+
 
     <div class="carousel-inner">
       <% images.each_with_index do |img, n| %>
           <%= content_tag :div, :class => n == 0 ? 'item active' : 'item' do %>
-            <div class="inner_carousel_item">
-              <%= image_tag img.image_url(image_version) %>
-            </div>
-            <% if use_labels %>
+            <!--<div class="inner_carousel_item">-->
+              <%= image_tag img %>
+            <!--</div>-->
+
+            <% if labels.count > 0 %>
               <div class='carousel-caption'>
                 <h3>
                   <%= img.description.to_s %>
@@ -26,10 +30,10 @@
       <% end %>
     </div>
 
-    <%= content_tag :a, '', :href => "##{carousel_id}", :class => 'left carousel-control', 'data-slide' => 'prev' do %>
+    <%= content_tag :a, '', :href => "##{element_id}", :class => 'left carousel-control', 'data-slide' => 'prev' do %>
         <span class="glyphicon glyphicon-chevron-left"></span>
     <% end %>
-    <%= content_tag :a, '', :href => "##{carousel_id}", :class => 'right carousel-control', 'data-slide' => 'next' do %>
+    <%= content_tag :a, '', :href => "##{element_id}", :class => 'right carousel-control', 'data-slide' => 'next' do %>
         <span class="glyphicon glyphicon-chevron-right"></span>
     <% end %>
 <% end %>
