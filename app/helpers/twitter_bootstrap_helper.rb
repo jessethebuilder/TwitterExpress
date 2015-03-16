@@ -1,22 +1,6 @@
 module  TwitterBootstrapHelper
 
   IMAGE_TYPES = %w|png jpg jpeg gif|
-  #
-  # def express_carousel(objects, use_indicators: true, use_labels: true, carousel_id: 'express_carousel',
-  #                      image_version: :carousel, data_interval: 5000)
-  #   #expects object to have an #images association, in which each image responds to image_url, like carrier_wave.
-  #   #Each image object should also respond to #description
-  #   images = []
-  #   objects = [objects] unless objects.is_a?(ActiveRecord::Relation)
-  #   objects.each do |o|
-  #     o.images.each do |i|
-  #       images << i
-  #     end
-  #   end
-  #   render :partial => 'twitter_bootstrap_partials/carousel',
-  #          :locals => {:images => images, :use_indicators => use_indicators, :use_labels => use_labels,
-  #                      :carousel_id => carousel_id, :image_version => image_version, :data_interval => data_interval}
-  # end
 
   def express_carousel(image_urls, labels: [], use_indicators: true, element_id: 'express_carousel', slide_delay: 5000)
     render :partial => 'twitter_bootstrap_partials/carousel',
@@ -34,6 +18,17 @@ module  TwitterBootstrapHelper
 
   def modal_close_button
     '<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>'.html_safe
+  end
+
+  def empty_container(container_id: nil, &block)
+    html = %Q|<div class="container"#{%Q[ id="#{container_id}"] if container_id}>|
+    html += '<div class="row">'
+    html += '<div class="col-sm-12">'
+    html += capture(block)
+    html += '</div><!-- col -->
+           </div><!-- row -->
+         </div><!-- cont -->'
+    html.html_safe
   end
 
   private
