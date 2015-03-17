@@ -24,7 +24,7 @@ module  TwitterBootstrapHelper
     html = %Q|<div class="container"#{%Q[ id="#{container_id}"] if container_id}>|
     html += '<div class="row">'
     html += '<div class="col-sm-12">'
-    html += capture(block)
+    html += capture(&block)
     html += '</div><!-- col -->
            </div><!-- row -->
          </div><!-- cont -->'
