@@ -7,6 +7,10 @@ gemspec
 
 gem 'jquery-rails'
 gem 'sass-rails'
+# gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails', :github => 'anjlab/bootstrap-rails'
+gem 'bootstrap-sass', '~> 3.0.3.0'
+
+
 
 group :test, :development do
   gem 'faker'
@@ -30,5 +34,7 @@ end
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
-gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails', :github => 'anjlab/bootstrap-rails'
+
+gem 'tzinfo-data'
+
 
