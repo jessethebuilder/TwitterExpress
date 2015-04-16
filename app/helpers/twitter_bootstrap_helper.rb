@@ -16,6 +16,14 @@ module  TwitterBootstrapHelper
                        :destroy_on_close => destroy_on_close, :element_id => element_id}
   end
 
+  def express_popover(link_text, content, title: nil, placement: nil, tab_index: 0, klass: '')
+    full_class = ('express_popover' + klass).chomp(' ')
+    content_tag :a, link_text, tabindex: tab_index, class: full_class, role: 'button',
+                'data-toggle' => 'popover', 'data-trigger' => 'focus',
+                'data-content' => content, 'data-title' => title,
+                'data-placement' => placement
+  end
+
   def modal_close_button
     '<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>'.html_safe
   end
