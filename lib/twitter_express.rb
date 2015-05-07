@@ -1,5 +1,5 @@
 require "twitter_express/engine"
 
 module TwitterExpress
-  include TwitterBootstrapHelper
+  # include TwitterBootstrapHelper
 end
