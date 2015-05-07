@@ -1,4 +1,4 @@
-module  TwitterBootstrapHelper
+module TwitterBootstrapHelper
 
   IMAGE_TYPES = %w|png jpg jpeg gif|
 
