@@ -1,8 +1,10 @@
-<div id='<%= element_id %>' class="modal fade">
+<%= content_tag :div, id: element_id, class: 'modal fade', :data => {:backdrop => backdrop, :keyboard => keyboard} do %>
+
+<!-- <div id='<%= element_id %>' class="modal fade" data-backdrop="static"> -->
   	<div class="modal-dialog">
     	<div class="modal-content">
       		<div class="modal-header">
-				<% if show_close%>
+				<% if show_close %>
 	              	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">close &times;</button>
         			<br>
         		<% end %>	
@@ -24,15 +26,16 @@
 
   	<% if destroy_on_close %>
     	<script>
-      		$('#' + <%= j element_id %>).on('hidden.bs.modal', function(){
-            	$('#' + <%= j element_id %>).detach();
+      		$('#' + '<%= j element_id %>').on('hidden.bs.modal', function(){
+            	$('#' + '<%= j element_id %>').detach();
       		});
     	</script>
   	<% end %>
   
   	<% if show_on_load %>
   		<script>
-			$('#' + <%= j element_id %>).modal('show')	
+			$('#' + '<%= j element_id %>').modal('show')	
 		</script>
   	<% end %>
-</div>
+<!-- </div> -->
+<% end %>

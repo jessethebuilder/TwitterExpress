@@ -9,11 +9,14 @@ module TwitterBootstrapHelper
                       :delay => slide_delay}
   end
 
-  def express_modal(title, footer_content: nil, destroy_on_close: true, show_on_load: false, element_id: 'express_modal', show_close: true, &content)
+  def express_modal(title, footer_content: nil, destroy_on_close: true, show_on_load: false, element_id: 'express_modal', 
+                    show_close: true, keyboard: true, backdrop: true, &content)
     # destroy_on_close = true includes a script in the modal that detaches the modal from the document. Good for ajax.
     render :partial => 'twitter_bootstrap_partials/modal',
            :locals => {:title => title, :footer_content => footer_content, :content => capture(&content),
-                       :destroy_on_close => destroy_on_close, :element_id => element_id, :show_close => show_close, :show_on_load => show_on_load}
+                       :destroy_on_close => destroy_on_close, :element_id => element_id, 
+                       :show_close => show_close, :show_on_load => show_on_load,
+                       :backdrop => backdrop, :keyboard => keyboard}
   end
 
   def express_popover(link_text, content, title: nil, placement: nil, tab_index: 0, klass: '')
