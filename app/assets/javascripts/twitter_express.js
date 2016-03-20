@@ -1,5 +1,3 @@
-//= require bootstrap
-
 function onMediaQuery(screen_size, on_methods, off_methods) {
   doMethods(off_methods);
 
